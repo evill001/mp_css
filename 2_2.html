@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(2n) { 
+    background: #eee;
+}
+
+li:nth-child(3) { 
+    color: red;
+}
+
+li:first-child {
+    background: rgba(255, 0, 0, .2);
+}
+
+li:last-child {
+    background: rgba(0, 0, 255, .2);
+}
+
+code {
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <ul>
+            <li>Древнерусский язык <code>li:first-child</code></li>
+            <li>Древненовгородский диалект <code>li:nth-child(2n)</code></li>
+            <li>Западнорусский письменный язык <code>li:nth-child(3)</code></li>
+            <li>Украинский язык <code>li:nth-child(2n)</code></li>
+            <li>Белорусский язык</li>
+            <li>Славянский язык <code>li:nth-child(2n)</code></li>
+            <li>Другие языки <code>li:last-child</code></li>
+    </ul>
+</body>
+</html>
